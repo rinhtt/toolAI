@@ -26,4 +26,4 @@ app.post('/api/recontent', async (req, res) => {
   }
 });
 
-app.listen(5001, () => console.log('🚀 Server đã sẵn sàng tại port 5001'));
+app.listen(process.env.PORT, () => console.log('🚀 Server đã sẵn sàng tại port ' + process.env.PORT));
